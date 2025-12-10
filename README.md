@@ -125,6 +125,7 @@ chemical-exposure-ai/
 ├── 📊 exposure_data.csv                  # Dataset (10,000 samples)
 │
 ├── 🐍 model_train.py                     # Model training script
+├── 🐍 results_generator.py               # Results & visualization generator
 ├── 🐍 explain.py                         # Streamlit web application
 │
 ├── 📂 models/                            # Saved models & encoders
@@ -134,6 +135,24 @@ chemical-exposure-ai/
 │   ├── treatment_target_encoder.pkl      # Treatment label encoder
 │   ├── encoders.pkl                      # Feature encoders
 │   └── lime_background.pkl               # LIME background data
+│
+├── 📂 results/                           # Generated results
+│   ├── 📊 table1_dataset_statistics.csv
+│   ├── 📊 table3_model_performance.csv
+│   ├── 📈 figure1_class_distributions.png
+│   ├── 📈 figure4_roc_curves.png
+│   ├── 📈 figure12_model_comparison.png
+│   └── 📄 SUMMARY_REPORT.txt
+│
+├── 📂 docs/                              # Documentation
+│   ├── images/                           # Screenshots & diagrams
+│   ├── methodology.md                    # Detailed methodology
+│   └── api_reference.md                  # API documentation
+│
+└── 📂 notebooks/                         # Jupyter notebooks (optional)
+    ├── 01_data_exploration.ipynb
+    ├── 02_model_development.ipynb
+    └── 03_results_analysis.ipynb
 
 ## 📄 License
 
