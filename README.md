@@ -14,16 +14,8 @@
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
-- [Demo](#-demo)
 - [Installation](#-installation)
-- [Quick Start](#-quick-start)
 - [Project Structure](#-project-structure)
-- [Methodology](#-methodology)
-- [Results](#-results)
-- [Usage Guide](#-usage-guide)
-- [Models](#-models)
-- [Contributing](#-contributing)
-- [Citation](#-citation)
 - [License](#-license)
 - [Contact](#-contact)
 
@@ -102,6 +94,50 @@ A **dual-model explainable AI system** that:
 - (Optional) Virtual environment
 
 ### Step 1: Clone the Repository
-```bash
+bash
 git clone https://github.com/yourusername/chemical-exposure-ai.git
 cd chemical-exposure-ai
+
+### Step 2: Create Virtual Environment (Recommended)
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+### Step 3: Install Dependencies
+pip install -r requirements.txt
+
+### Step 4: Set Up Environment Variables
+GROQ_API_KEY=your_groq_api_key_here
+Get your free Groq API key from console.groq.com
+
+## 📁 Project Structure
+chemical-exposure-ai/
+│
+├── 📄 README.md                          # This file
+├── 📄 requirements.txt                   # Python dependencies
+├── 📄 .env.example                       # Environment variables template
+├── 📄 LICENSE                            # MIT License
+│
+├── 📊 exposure_data.csv                  # Dataset (10,000 samples)
+│
+├── 🐍 model_train.py                     # Model training script
+├── 🐍 explain.py                         # Streamlit web application
+│
+├── 📂 models/                            # Saved models & encoders
+│   ├── outcome_lgb.txt                   # Outcome prediction model
+│   ├── treatment_lgb.txt                 # Treatment recommendation model
+│   ├── outcome_target_encoder.pkl        # Outcome label encoder
+│   ├── treatment_target_encoder.pkl      # Treatment label encoder
+│   ├── encoders.pkl                      # Feature encoders
+│   └── lime_background.pkl               # LIME background data
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [License](#-license) file for details.
+
+
+
