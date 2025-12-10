@@ -17,7 +17,6 @@
 - [Installation](#-installation)
 - [Project Structure](#-project-structure)
 - [License](#-license)
-- [Contact](#-contact)
 
 ---
 
